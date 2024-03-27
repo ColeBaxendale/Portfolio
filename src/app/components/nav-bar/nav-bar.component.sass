@@ -1,10 +1,4 @@
-.active
-    border-bottom: 2px solid #ffffff
-    transform: scale(1.1)
-    transition: 
-        border-bottom: 0.3s ease,
-        color: 0.3s ease,
-        transform: 0.3s ease
+
 
 
 .nav-container
@@ -25,6 +19,38 @@
     margin: 0
     
 
-.nav-items a 
-    text-decoration: none
+.nav-items a
+  position: relative
+  display: inline-block
+  text-decoration: none
+  color: white
+  overflow: hidden
+
+  // Pseudo-element for gradient underline
+  &::after
+    content: ''
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 0
+    height: 2px
+    background: linear-gradient(to right, purple, pink, purple) // Extended gradient for seamless animation
+    background-size: 200% 100%
+    transition: opacity 0.3s ease
+    opacity: 0
+
+  // Active state with animation
+  &.active
     color: white
+    transform: scale(1.1)
+    &::after
+      opacity: 1
+      animation: shiftColors 3s linear infinite
+
+@keyframes shiftColors
+  from
+    background-position: 0% 0
+  to
+    background-position: -100% 0
+
+
