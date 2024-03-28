@@ -1,10 +1,10 @@
 
-
+$colors: #cad2c5, #84a98c, #52796f ,#354f52
 
 .nav-container
-    background-color: #1f0463
     display: flex
     justify-content: space-around
+    background: #252422
     padding: 3vh
     margin: 0 
     
@@ -22,35 +22,30 @@
 .nav-items a
   position: relative
   display: inline-block
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1)
   text-decoration: none
-  color: white
+  color: #fffcf2
+  padding: 0 2px
   overflow: hidden
+  opacity: .7
+  transition:  all .45s ease-in-out
 
-  // Pseudo-element for gradient underline
-  &::after
-    content: ''
-    position: absolute
-    left: 0
-    right: 0
-    bottom: 0
-    height: 2px
-    background: linear-gradient(to right, purple, pink, purple) // Extended gradient for seamless animation
-    background-size: 200% 100%
-    transition: opacity 0.3s ease
-    opacity: 0
+  &:hover
+    opacity: .9
+    transform: scale(1.1) rotate(-.5deg)
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2)
+    &.active
+      
+    
 
-  // Active state with animation
+  
   &.active
-    color: white
-    transform: scale(1.1)
-    &::after
-      opacity: 1
-      animation: shiftColors 3s linear infinite
+    
+    opacity: 1
+    transition:  all .45s ease-in-out
+    transform: scale(1.25) 
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3)
 
-@keyframes shiftColors
-  from
-    background-position: 0% 0
-  to
-    background-position: -100% 0
+
 
 
