@@ -6,3 +6,24 @@
 @font-face 
     font-family: "TheMunday"
     src: url('./assets/fonts/The-Munday.ttf') format('truetype')
+
+.container 
+  display: flex
+  flex-direction: row
+  height: 100vh /* Full height of the viewport */
+
+
+/* Styling for the navbar */
+.navbar 
+  width: 250px /* Adjust the width of the navbar as needed */
+  height: 100vh /* Full height */
+  margin-left  : 22px
+  position: sticky
+  top: 0 /* Stick to the top */
+  right: 0 /* Stick to the right side */
+
+
+/* Styling for the router outlet / main content area */
+.main-content 
+  flex-grow: 1 /* Take up the remaining space */
+  overflow-y: auto 

@@ -1,0 +1,62 @@
+.contact-page-container
+    padding-top: 25px
+    padding-left: 40px
+    width: 100%
+    background-color: red
+
+
+    .contact-heading-container
+        color: #010101
+        font-family: 'TheMunday'
+        text-align: right
+        letter-spacing: 2px
+        
+    &:hover
+        .contact-hover
+            filter: blur(0x)
+            opacity: 1
+            font-size: 42px
+        .main-title
+            filter: blur(10px)
+            opacity: 0
+            
+.main-title
+    position: absolute
+    font-size: 40px
+    margin-bottom: -14px
+    transition: all .75s ease-in-out
+    filter: blur(0px)
+    
+.contact-hover
+    position: absolute
+    font-size: 40px
+    margin-bottom: -14px
+    opacity: 0
+    filter: blur(0px)
+    transition: all .75s ease-in-out
+
+.main-title-box-holder
+    color: #010101
+    font-family: 'TheMunday'
+    text-align: right
+    letter-spacing: 2px
+    font-size: 40px
+    margin-bottom: -10px
+    opacity: 0
+
+.hover-me
+    font-family: 'TheMunday'
+    letter-spacing: 5px
+    font-size: 14px
+    color: #2b2b2b
+    opacity: 60%
+    font-weight: 900
+    position: relative
+    text-align: right
+
+.email-title
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    width: 100% // Take up full width to push content to the right
+    text-align: right // Ensure text itself is aligned to the right

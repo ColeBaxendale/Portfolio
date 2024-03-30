@@ -6,9 +6,7 @@ import { HomeComponent } from './pages/home/home.component';
 
 export const routes: Routes = [
     { path: 'home', component: HomeComponent, pathMatch: 'full' },
-    { path: 'work', component: ProjectsComponent, pathMatch: 'full' },
-    { path: 'ideas', component: ProjectsComponent, pathMatch: 'full' }, //CREATE 
-    { path: 'cv', component: ProjectsComponent, pathMatch: 'full' }, //CREATE 
+    { path: 'resume', component: ProjectsComponent, pathMatch: 'full' }, //CREATE 
     
     { path: 'full-stack/overhead-doors', component: ContactComponent, pathMatch: 'full' }, //CREATE
     { path: 'full-stack/stock-simulator', component: ContactComponent, pathMatch: 'full' }, //CREATE
