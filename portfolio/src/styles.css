@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "TheMunday";
+    src: url('./assets/fonts/The-Munday.ttf') format('truetype');
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh ;
+    align-content: space-between;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
+.nav-container{
+    right:0;
+    position: sticky;
+}
