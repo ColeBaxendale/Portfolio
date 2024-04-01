@@ -17,6 +17,5 @@ export const routes: Routes = [
     { path: 'innovations/software2', component: ContactComponent, pathMatch: 'full' },
 
     { path: 'contact/allinfo', component: ContactComponent, pathMatch: 'full' },
-    { path: 'contact/email', component: ContactComponent, pathMatch: 'full' },
     { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
