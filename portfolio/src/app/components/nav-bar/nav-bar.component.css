@@ -1,98 +1,46 @@
-.nav-container{
-    height:100vh;
-    padding-top: 20px;
-    border-left: 1.2px solid #b3b3b3;
+/* Ensures the navigation container is a flex column */
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 100vh;
+    padding: 1.25rem 1.875rem 0.625rem 2.813rem;
+    background-color: rgb(255, 248, 244);
     text-align: right;
 }
 
-.nav-name{
-    background-color: #000000;
-    padding: 4px;
-    margin-bottom: 10px;
-    padding-right: 5px;
+/* Style adjustments for the name section */
+.nav-name {
+    background-color: #000;
     color: #fffdfd;
-    font-family: 'TheMunday';
+    padding: 0.25rem;
+    margin-bottom: 0.625rem;
+    font-family: 'Kreadon-L';
+    letter-spacing: 0.125rem;
+
+}
+
+.nav-name h1, .nav-name h2 {
     text-align: right;
-    letter-spacing: 2px;
-    h1{
-        font-size: 22px;
-        margin-bottom: -14px;
-    }
-
-    h2{
-        font-size: 12px;
-    }
 }
 
-.nav-main-container{
-    padding-left: 45px;
-    padding-right: 30px;
-    padding-bottom: 10px;
+.nav-name h1 {
+    font-size: 22px;
 }
 
-
-.nav-items-main{
-    display: inline-flex;
-    flex-direction: column;
-    align-items: flex-end;
-    .active{
-        font-weight: 1000;
-        font-size: 17px;
-    }
-}
-
-
-.nav-main{
-    font-family: 'TheMunday';
-    letter-spacing: 3px;
-    font-size: 16px;
-    text-decoration: none;
-    display: inline;
-    color: #010101;
-    transition: all .15s;
-}
-
-
-.nav-items-sub-main-container{
-    border-top: .75px solid #b3b3b3;
-    padding-bottom: 15px;
-    .active{
-        font-weight: 1000;
-        font-size: 17px;
-    }
-
-}
-
-
-.nav-items-sub-main{
-    padding-left: 45px;
-    padding-right: 30px;
-    display: inline-flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-
-  .nav-sub-main{
-    padding-top: 15px;
-    margin-right: -4.4px;
-    font-family: 'TheMunday';
-    letter-spacing: 5px;
+.nav-name h2 {
     font-size: 14px;
-    text-decoration: none;
-    color: #2b2b2b;
-    opacity: 60%;
-    font-weight: 900;
-    transition: all .15s;
-  }
+    font-weight: 100;
+}
 
+/* Targeting the links container specifically for flex column layout */
+.nav-links-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+}
 
-  .nav-sub-sub-main{
-    font-family: 'TheMunday';
-    letter-spacing: 2px;
-    font-size: 12px;
-    text-decoration: none;
-    color: #2b2b2b;
-    transition: all .15s;
-  }
-
+.nav-links-container{
+    
+}

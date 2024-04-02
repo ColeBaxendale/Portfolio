@@ -3,10 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-@font-face {
-    font-family: "TheMunday";
-    src: url('./assets/fonts/The-Munday.ttf') format('truetype');
-}
+
 .container {
     display: flex;
     flex-direction: row;
@@ -14,11 +11,77 @@
     align-content: space-between;
 }
 
-.main-content {
-  flex-grow: 1;
+.app-container {
+    display: flex;
+    flex-direction: row; /* Lays out children in a row */
+    align-items: stretch; /* Stretches children to fill the container height */
+    height: 100vh; /* Make the container fill the viewport height */
+  }
+  
+  router-outlet {
+    flex-grow: 1; /* Allows the router outlet to grow and fill the space */
+    overflow-y: auto; /* Adds scroll to the content if needed */
+  }
+  
+  app-nav-bar {
+    flex-basis: 16%; /* Adjust this to set the width of the nav bar */
+    height: 100vh; /* Make the nav bar fill the height of the viewport */
+    position: sticky;
+    top: 0; /* Stick to the top of the viewport */
+  }
+
+
+
+
+
+
+
+@font-face {
+    font-family: "TheMunday";
+    src: url('./assets/fonts/The-Munday.ttf') format('truetype');
 }
 
-.nav-container{
-    right:0;
-    position: sticky;
+@font-face {
+    font-family: "Harmony";
+    src: url('./assets/fonts/HARMONY.otf') format('truetype');
+}
+
+@font-face {
+    font-family: "Kreadon-B";
+    src: url('./assets/fonts/Kreadon-B.otf') format('truetype');
+}
+
+@font-face {
+    font-family: "Kreadon";
+    src: url('./assets/fonts/Kreadon-D.otf') format('truetype');
+}
+
+@font-face {
+    font-family: "Kreadon-EB";
+    src: url('./assets/fonts/Kreadon-EB.otf') format('truetype');
+}
+
+@font-face {
+    font-family: "Kreadon-EL";
+    src: url('./assets/fonts/Kreadon-EL.otf') format('truetype');
+}
+
+@font-face {
+    font-family: "Kreadon-L";
+    src: url('./assets/fonts/Kreadon-L.otf') format('truetype');
+}
+
+@font-face {
+    font-family: "Kreadon-M";
+    src: url('./assets/fonts/Kreadon-M.otf') format('truetype');
+}
+
+@font-face {
+    font-family: "Kreadon-R";
+    src: url('./assets/fonts/Kreadon-R.otf') format('truetype');
+}
+
+@font-face {
+    font-family: "KreadonVF";
+    src: url('./assets/fonts/KreadonVF.ttf') format('truetype');
 }
