@@ -113,7 +113,6 @@
 /* Style for active link */
 .nav-links a.active {
     color: #0026AD;
-    opacity: 25%;
 
 }
 .nav-links a.active.shake {
