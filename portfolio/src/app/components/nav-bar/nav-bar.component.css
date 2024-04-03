@@ -1,46 +1,184 @@
-/* Ensures the navigation container is a flex column */
 .nav-container {
+    height: 100vh;
+    border-right: #18273F  solid 1px;
+    padding-top: 20px;
+
+}
+
+.nav-name-container {
+    margin-left: 20px;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    height: 100vh;
-    padding: 1.25rem 1.875rem 0.625rem 2.813rem;
-    background-color: rgb(255, 248, 244);
-    text-align: right;
-}
 
-/* Style adjustments for the name section */
-.nav-name {
-    background-color: #000;
-    color: #fffdfd;
-    padding: 0.25rem;
-    margin-bottom: 0.625rem;
-    font-family: 'Kreadon-L';
-    letter-spacing: 0.125rem;
+    align-items: left;
+    text-align: left;
+    background-color: rgb(255, 255, 255);
+    color: #18273F;
 
-}
-
-.nav-name h1, .nav-name h2 {
-    text-align: right;
+    width: 85%;
+    padding: 10px 0;
+    text-align: left;
 }
 
 .nav-name h1 {
-    font-size: 22px;
+    font-family: 'Harmony';
+    font-size: 36px;
+    font-weight: lighter;
+    letter-spacing: 2px;
 }
 
 .nav-name h2 {
-    font-size: 14px;
-    font-weight: 100;
+    margin: 0;
+    font-family: 'Kreadon-M';
+    font-weight: lighter;
+
+    font-size: 16px;
+    letter-spacing: 5px;
 }
 
-/* Targeting the links container specifically for flex column layout */
-.nav-links-container {
+.nav-links {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
+    padding: 20px 20px;
+    border: none;
+    border-bottom: #18273F  solid 1px;
+}
+
+
+.nav-links a{
+    color: black;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-family: 'Kreadon-M';
+    font-size: 20px;
+    font-weight: lighter;
+    padding-bottom: 10px;
+    transition: all 0.4s ease-in-out;
+
+}
+
+.nav-links-sub{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: none;
+    border-bottom: #18273F  solid 1px;
+    padding: 20px 20px;
+
+}
+
+.nav-links-sub h1{
+    color: #18273F;
+    text-decoration: none;
+    letter-spacing: 4px;
+    font-weight: lighter;
+    font-family: 'Harmony';
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+
+.nav-links-sub a{
+    color: black;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-family: 'Kreadon-M';
+    font-size: 14px;
+    padding-bottom: 10px;
+    transition: all 0.4s ease-in-out;
+}
+
+/* Style for active link */
+.nav-links-sub a.active {
+    margin-left: 30px;
+    opacity: 25%;
+    color: #555;
+
+
+}
+
+.nav-links-sub a:hover {
+    color: #555;
+}
+
+.nav-links a:hover {
+    color: #555;
+}
+.nav-links-sub a.active.shake {
+    animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both; /* Quicker shake effect */
+}
+
+/* Style for active link */
+.nav-links a.active {
+    color: #555;
+    opacity: 25%;
+
+}
+.nav-links a.active.shake {
+    animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both; /* Quicker shake effect */
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50% {
+        transform: translateX(-1px);
+    }
+    20%, 40%, 60% {
+        transform: translateX(1px);
+    }
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 20px;
     
 }
 
-.nav-links-container{
-    
+.social-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000; /* Adjust the color to fit your design */
+    margin-bottom: 10px; /* Adjust spacing as needed */
+    font-family: Arial, sans-serif; /* Use your preferred font */
+}
+
+.social-link img {
+    margin-right: 15px; /* Adjust spacing between icon and text */
+    width: 30px; /* Adjust icon size as needed */
+    height: 30px; /* Adjust icon size as needed */
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+/* This is optional: add hover effect for the links */
+.social-link span:hover {
+    color: #555; /* Adjust hover color as needed */
+}
+
+.social-links h1{
+    color: #18273F;
+    text-decoration: none;
+    letter-spacing: 4px;
+    font-weight: lighter;
+    font-family: 'Harmony';
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+
+.social-links span{
+    padding-top: 5px;
+    color: black;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-family: 'Kreadon-M';
+    font-size: 14px;
+    padding-bottom: 10px;
+    transition: all 0.4s ease-in-out;
 }

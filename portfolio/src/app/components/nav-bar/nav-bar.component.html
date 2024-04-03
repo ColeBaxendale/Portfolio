@@ -1,16 +1,48 @@
 <div class="nav-container">
   <nav>
-    <div class="nav-main-container">
+    <div class="nav-name-container">
       <div class="nav-name">
         <h1>Cole Baxendale</h1>
         <h2>Software Engineer</h2>
       </div>
-      <div class="nav-links">
-        <div class="nav-links-container">
-          <a routerLink="home" routerLinkActive="active">HOME</a>
-          <a routerLink="resume" routerLinkActive="active">RESUME</a>
-        </div>
-      </div>
     </div>
+    <div class="nav-links">
+      <a routerLink="/home" routerLinkActive="active" (click)="onLinkClick($event, 'home')">HOME</a>
+      <a routerLink="/resume" routerLinkActive="active" (click)="onLinkClick($event, 'resume')">RESUME</a>
+    </div>
+    <div class="nav-links-sub">
+      <h1>MACHINE LEARNING</h1>
+      <a routerLink="/machine-learning/chess" routerLinkActive="active" (click)="onLinkClick($event, 'machine-learning/chess')">AI Chess Bot</a>
+      <a routerLink="/machine-learning/project" routerLinkActive="active" (click)="onLinkClick($event, 'machine-learning/project')">Another ML Project</a>
+      <a routerLink="/machine-learning/project2" routerLinkActive="active" (click)="onLinkClick($event, 'machine-learning/project2')">Another ML Project 2</a>
+    </div>
+    <div class="nav-links-sub">
+      <h1>FULL-STACK</h1>
+      <a routerLink="/full-stack/overhead-doors" routerLinkActive="active" (click)="onLinkClick($event, 'full-stack/overhead-doors')">Overhead doors</a>
+      <a routerLink="/full-stack/stock-simulator" routerLinkActive="active" (click)="onLinkClick($event, 'full-stack/stock-simulator')">Stock Simulator</a>
+      <a routerLink="/full-stack/project" routerLinkActive="active" (click)="onLinkClick($event, 'full-stack/project')">Full Stack Project</a>
+    </div>
+    <div class="nav-links-sub">
+      <h1>INNOVATIONS</h1>
+      <a routerLink="/innovations/software1" routerLinkActive="active" (click)="onLinkClick($event, 'innovations/software1')">Software Paper 1</a>
+      <a routerLink="/innovations/software2" routerLinkActive="active" (click)="onLinkClick($event, 'innovations/software2')">Software Paper 2</a>
+      <a routerLink="/innovations/software3" routerLinkActive="active" (click)="onLinkClick($event, 'innovations/software3')">Software Paper 3</a>
+    </div>
+    <div class="social-links">
+      <h1>CONTACT ME</h1>
+      <a href="https://github.com/ColeBaxendale" class="social-link" target="_blank" rel="noopener noreferrer">
+          <img src="../../../assets/images/github.png" alt="GitHub">
+          <span>GitHub</span>
+      </a>
+      <a href="https://www.linkedin.com/in/cole-baxendale-052302193/" class="social-link" target="_blank" rel="noopener noreferrer">
+          <img src="../../../assets/images/LinkedIn_icon_circle.svg.png" alt="LinkedIn">
+          <span>LinkedIn</span>
+      </a>
+      <a href="mailto:your-email@example.com" class="social-link" target="_blank" rel="noopener noreferrer">
+          <img src="../../../assets/images/112-gmail_email_mail-512.png" alt="Email">
+          <span>Email Me</span>
+      </a>
+  </div>
+  
   </nav>
 </div>
