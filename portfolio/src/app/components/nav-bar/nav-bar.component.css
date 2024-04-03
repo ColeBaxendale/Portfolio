@@ -93,8 +93,8 @@
 /* Style for active link */
 .nav-links-sub a.active {
     margin-left: 30px;
-    opacity: 25%;
-    color: #555;
+    color: #0026AD;
+
 
 
 }
@@ -112,8 +112,7 @@
 
 /* Style for active link */
 .nav-links a.active {
-    color: #555;
-    opacity: 25%;
+    color: #0026AD;
 
 }
 .nav-links a.active.shake {
